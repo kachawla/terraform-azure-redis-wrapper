@@ -9,4 +9,5 @@ output "result" {
       connectionString = module.redis.connectionString
     }
   }
+  sensitive = true
 }
