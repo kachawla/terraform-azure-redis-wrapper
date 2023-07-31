@@ -1,24 +1,14 @@
-variable "azure_region" {
-  description = "Azure region to use."
+variable "resource_group_name" {
   type        = string
+  description = "Name of the Azure resource group."
 }
 
-variable "client_name" {
-  description = "Client name/account used in naming"
+variable "location" {
   type        = string
+  description = "Redis cache deployment region. Can be different from resource group location."
 }
 
-variable "storage_client_name" {
-  description = "Client name/account used in naming storage account"
+variable "redis_cache_name" {
   type        = string
-}
-
-variable "environment" {
-  description = "Project environment"
-  type        = string
-}
-
-variable "stack" {
-  description = "Project stack name"
-  type        = string
+  description = "Name of the Redis Cache."
 }
