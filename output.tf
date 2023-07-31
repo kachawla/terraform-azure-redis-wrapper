@@ -1,7 +1,7 @@
 output "result" {
   value = {
+    resources = [module.redis.id]
     values = {
-      resources = [module.redis.id]
       host = module.redis.host
       port = module.redis.port
     }
