@@ -13,7 +13,7 @@ resource "random_uuid" "name" {
 module "redis" {
   source  = "kachawla/test/azure"
 
-  redis_cache_name    = "${random_uuid.name.result}-redis"
+  redis_cache_name    = "redis-${random_uuid.name.result}"
   location            = var.location
   resource_group_name = var.context.azure.resourceGroup.name
 }
