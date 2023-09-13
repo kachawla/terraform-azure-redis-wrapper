@@ -10,7 +10,7 @@ terraform {
 resource "random_id" "resource" {
   keepers = {
     # Generate a new id for every unique resource id
-    ami_id = var.context.resource.id
+    resource_id = var.context.resource.id
   }
 
   byte_length = 8
