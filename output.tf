@@ -6,7 +6,7 @@ output "result" {
       port = module.redis.port
     }
     secrets = {
-      connectionString = module.redis.connectionString
+      password = module.redis.password
     }
   }
   sensitive = true
