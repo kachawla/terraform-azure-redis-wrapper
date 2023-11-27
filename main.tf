@@ -7,6 +7,10 @@ terraform {
   }
 }
 
+provider "azurerm" {
+  features {}
+}
+
 resource "random_id" "resource" {
   keepers = {
     # Generate a new id for every unique resource id
