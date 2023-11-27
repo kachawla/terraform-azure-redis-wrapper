@@ -8,6 +8,8 @@ terraform {
 }
 
 provider "azurerm" {
+  alias  = "local"
+  features {}
 }
 
 resource "random_id" "resource" {
